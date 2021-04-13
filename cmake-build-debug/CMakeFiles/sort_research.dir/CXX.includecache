@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/strikez/ntfs/C++/sort_research/main.cpp
+iostream
+-
+ctime
+-
+sort_algo.h
+/media/strikez/ntfs/C++/sort_research/sort_algo.h
+string
+-
+
+/media/strikez/ntfs/C++/sort_research/sort_algo.h
+
