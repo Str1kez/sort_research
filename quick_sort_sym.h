@@ -2,8 +2,8 @@
 // Created by strikez on 13.04.2021.
 //
 
-#ifndef SORT_RESEARCH_SORT_ALGO_H
-#define SORT_RESEARCH_SORT_ALGO_H
+#ifndef SORT_RESEARCH_QUICK_SORT_SYM_H
+#define SORT_RESEARCH_QUICK_SORT_SYM_H
 template <typename T>
 void swap(T &a, T &b)
 {
@@ -39,12 +39,13 @@ unsigned int partition(T *arr, unsigned int i, unsigned int j, int pivot)
 }
 
 template <typename T>
-void quick_sort(T *arr, unsigned int i, unsigned int j)
+void quick_sort_sym(T *arr, unsigned int i, unsigned int j)
 {
 	int pivot = find_pivot(arr, i, j);
 	if (pivot == -1) return;
 	unsigned int k = partition(arr, i, j, arr[pivot]);
-	quick_sort(arr, i, k - 1);
-	quick_sort(arr, k, j);
+	quick_sort_sym(arr, i, k - 1);
+	quick_sort_sym(arr, k, j);
 }
-#endif //SORT_RESEARCH_SORT_ALGO_H
+
+#endif //SORT_RESEARCH_QUICK_SORT_SYM_H

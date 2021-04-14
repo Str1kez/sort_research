@@ -3,6 +3,5 @@
 
 CMakeFiles/sort_research.dir/main.cpp.o
  /media/strikez/ntfs/C++/sort_research/main.cpp
- /media/strikez/ntfs/C++/sort_research/sort_algo.h
-CMakeFiles/sort_research.dir/quick_sort.cpp.o
- /media/strikez/ntfs/C++/sort_research/quick_sort.cpp
+ /media/strikez/ntfs/C++/sort_research/quick_sort.h
+ /media/strikez/ntfs/C++/sort_research/quick_sort_structure.h

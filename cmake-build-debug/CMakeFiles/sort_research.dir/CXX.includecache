@@ -11,10 +11,18 @@ iostream
 -
 ctime
 -
-sort_algo.h
-/media/strikez/ntfs/C++/sort_research/sort_algo.h
+quick_sort.h
+/media/strikez/ntfs/C++/sort_research/quick_sort.h
+quick_sort_structure.h
+/media/strikez/ntfs/C++/sort_research/quick_sort_structure.h
 string
 -
 
-/media/strikez/ntfs/C++/sort_research/sort_algo.h
+/media/strikez/ntfs/C++/sort_research/quick_sort.h
+string
+-
+
+/media/strikez/ntfs/C++/sort_research/quick_sort_structure.h
+iostream
+-
 

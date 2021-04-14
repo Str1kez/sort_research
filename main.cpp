@@ -1,46 +1,36 @@
 #include <iostream>
 #include <ctime>
-#include "sort_algo.h"
+#include "quick_sort_sym.h"
+#include "quick_sort_structure.h"
 #include <string>
 
 using namespace std;
-
-struct Date
-{
-	int Day;
-	int Month;
-	int Year;
-	void Append(int d, int m, int y)
-	{
-		this->Day = d;
-		this->Month = m;
-		this->Year = y;
-	}
-
-};
 
 int main()
 {
 	unsigned int count;
 	cin >> count;
 //	char *arr = new char[count]; //one-byte array
-//	int *arr = new int[count];
-//	TODO: Test string and create algo for structure
-//	string *arr = new string[count];
-	Date *arr = new Date[count];
+//	int *arr = new int[count]; // int array
+//	TODO: Test string
+	string *arr = new string[count]; // string array
+//	Date *arr = new Date[count]; // struct array
 	srand(time(nullptr));
 	for (unsigned int i = 0; i < count; i++)
 	{
-//		arr[i] = rand() % 100;
-		arr[i].Append(rand() % 31, rand() % 12, rand() % 3000);
-//		cout << arr[i] << "|" << (int)(arr[i]) << "\t";
+		cin >> arr[i]; // set values for strings
+//		arr[i] = rand() % 100; // set values for int
+//		arr[i] = rand() % 128; // set values for chars
+//		arr[i].Append(rand() % 30 + 1, rand() % 12 + 1, rand() % 3000); // set values for struct
+//		cout << arr[i] << "|" << (int)(arr[i]) << "\t"; // prove for chars
 	}
-//	quick_sort(arr, 0, count - 1);
+//	quick_sort_sym(arr, 0, count - 1); // for chars and ints
+//	quick_sort_structure(arr, 0, count -1);
 	cout << endl;
 	for (unsigned int i = 0; i < count; i++)
 	{
-//		cout << arr[i] << "\t";
-		printf("%d:%d:%d\t", arr[i].Day, arr[i].Month, arr[i].Year);
+		cout << arr[i] << "\t";
+//		printf("%d:%d:%d\t", arr[i].Day, arr[i].Month, arr[i].Year);
 	}
 	delete []arr;
 	return 0;

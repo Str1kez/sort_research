@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/media/strikez/ntfs/C++/sort_research/main.cpp" "/media/strikez/ntfs/C++/sort_research/cmake-build-debug/CMakeFiles/sort_research.dir/main.cpp.o"
-  "/media/strikez/ntfs/C++/sort_research/quick_sort.cpp" "/media/strikez/ntfs/C++/sort_research/cmake-build-debug/CMakeFiles/sort_research.dir/quick_sort.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

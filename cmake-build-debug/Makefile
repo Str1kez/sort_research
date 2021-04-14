@@ -169,33 +169,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sort_research.dir/build.make CMakeFiles/sort_research.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-quick_sort.o: quick_sort.cpp.o
-
-.PHONY : quick_sort.o
-
-# target to build an object file
-quick_sort.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sort_research.dir/build.make CMakeFiles/sort_research.dir/quick_sort.cpp.o
-.PHONY : quick_sort.cpp.o
-
-quick_sort.i: quick_sort.cpp.i
-
-.PHONY : quick_sort.i
-
-# target to preprocess a source file
-quick_sort.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sort_research.dir/build.make CMakeFiles/sort_research.dir/quick_sort.cpp.i
-.PHONY : quick_sort.cpp.i
-
-quick_sort.s: quick_sort.cpp.s
-
-.PHONY : quick_sort.s
-
-# target to generate assembly for a file
-quick_sort.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sort_research.dir/build.make CMakeFiles/sort_research.dir/quick_sort.cpp.s
-.PHONY : quick_sort.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -208,9 +181,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... quick_sort.o"
-	@echo "... quick_sort.i"
-	@echo "... quick_sort.s"
 .PHONY : help
 
 
