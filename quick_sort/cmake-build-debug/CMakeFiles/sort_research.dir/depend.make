@@ -3,5 +3,4 @@
 
 CMakeFiles/sort_research.dir/main.cpp.o: ../main.cpp
 CMakeFiles/sort_research.dir/main.cpp.o: ../quick_sort.h
-CMakeFiles/sort_research.dir/main.cpp.o: ../quick_sort_structure.h
 
