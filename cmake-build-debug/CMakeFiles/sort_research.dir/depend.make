@@ -3,7 +3,6 @@
 
 CMakeFiles/sort_research.dir/main.cpp.o: ../base_structure.h
 CMakeFiles/sort_research.dir/main.cpp.o: ../main.cpp
-CMakeFiles/sort_research.dir/main.cpp.o: ../merge_sort.h
 CMakeFiles/sort_research.dir/main.cpp.o: ../quick_sort.h
-CMakeFiles/sort_research.dir/main.cpp.o: ../standart_sorts.h
+CMakeFiles/sort_research.dir/main.cpp.o: ../shell_sort.h
 

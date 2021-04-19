@@ -88,10 +88,10 @@
 		<Unit filename="/media/strikez/ntfs/C++/sort_research/main.cpp">
 			<Option target="sort_research"/>
 		</Unit>
-		<Unit filename="/media/strikez/ntfs/C++/sort_research/merge_sort.h">
+		<Unit filename="/media/strikez/ntfs/C++/sort_research/quick_sort.h">
 			<Option target="sort_research"/>
 		</Unit>
-		<Unit filename="/media/strikez/ntfs/C++/sort_research/quick_sort.h">
+		<Unit filename="/media/strikez/ntfs/C++/sort_research/shell_sort.h">
 			<Option target="sort_research"/>
 		</Unit>
 		<Unit filename="/media/strikez/ntfs/C++/sort_research/CMakeLists.txt">

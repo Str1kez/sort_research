@@ -15,20 +15,16 @@ ctime
 -
 quick_sort.h
 /media/strikez/ntfs/C++/sort_research/quick_sort.h
-merge_sort.h
-/media/strikez/ntfs/C++/sort_research/merge_sort.h
-standart_sorts.h
-/media/strikez/ntfs/C++/sort_research/standart_sorts.h
-
-/media/strikez/ntfs/C++/sort_research/merge_sort.h
-base_structure.h
-/media/strikez/ntfs/C++/sort_research/base_structure.h
+shell_sort.h
+/media/strikez/ntfs/C++/sort_research/shell_sort.h
 
 /media/strikez/ntfs/C++/sort_research/quick_sort.h
 base_structure.h
 /media/strikez/ntfs/C++/sort_research/base_structure.h
 
-/media/strikez/ntfs/C++/sort_research/standart_sorts.h
+/media/strikez/ntfs/C++/sort_research/shell_sort.h
 base_structure.h
 /media/strikez/ntfs/C++/sort_research/base_structure.h
+cmath
+-
 
