@@ -32,7 +32,7 @@ template <typename T>
 void insertion_sort(T* arr, unsigned int i, unsigned int j)
 {
 	for (unsigned int x = i + 1; x < j + 1; x++)
-		for(unsigned int z = x; z > 0 && arr[z - 1] > arr[z]; z--)
+		for(unsigned int z = x; z > i && arr[z - 1] > arr[z]; z--)
 			uni_swap(arr[z - 1], arr[z]);
 }
 
