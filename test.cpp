@@ -6,12 +6,14 @@
 #include "standart_sorts.h"
 #include "merge_sort.h"
 #include "shell_sort.h"
+#include "heap_sort.h"
+#include "lsd_sort.h"
 #include <iostream>
 
 int main()
 {
 	int arr[10] = {10, 9, 3, 4, 2, 1, 6, 3, 12, 10};
-	shell_sort_advanced(arr, 0, 9);
-	for (int i = 0; i < 10; ++i) cout << arr[i] << endl;
+	lsd_sort(arr, 0, 9);
+//	for (int i = 0; i < 10; ++i) cout << arr[i] << endl;
 	return 0;
 }
