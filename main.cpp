@@ -3,6 +3,7 @@
 //#include "merge_sort.h"
 //#include "standart_sorts.h"
 #include "shell_sort.h"
+#include "heap_sort.h"
 
 using namespace std;
 
@@ -20,7 +21,7 @@ int main()
 	// tests
 //	random_test(arr_char, arr_int, arr_str, arr_date);
 //	first_half_sorted_test(arr_char, arr_int, arr_str, arr_date);
-//	reverse_sorted_test(arr_char, arr_int, arr_str, arr_date);
+	reverse_sorted_test(arr_char, arr_int, arr_str, arr_date);
 
 	delete []arr_date;
 	delete []arr_str;
@@ -48,19 +49,19 @@ void random_test(char *arr_char, int *arr_int, string *arr_str, Date *arr_date)
 		}
 
 		time_char = clock();
-		shell_sort_advanced(arr_char, 0, j - 1);
+		heap_sort(arr_char, 0, j - 1);
 		time_char = clock() - time_char;
 		printf("\tTime for %d elements chars: %f sec\n", j, ((float)time_char) / CLOCKS_PER_SEC);
 		time_int = clock();
-		shell_sort_advanced(arr_int, 0, j - 1);
+		heap_sort(arr_int, 0, j - 1);
 		time_int = clock() - time_int;
 		printf("\tTime for %d elements ints: %f sec\n", j, ((float)time_int) / CLOCKS_PER_SEC);
 		time_str = clock();
-		shell_sort_advanced(arr_str, 0, j - 1);
+		heap_sort(arr_str, 0, j - 1);
 		time_str = clock() - time_str;
 		printf("\tTime for %d elements strings: %f sec\n", j, ((float)time_str) / CLOCKS_PER_SEC);
 		time_date = clock();
-		shell_sort_advanced(arr_date, 0, j - 1);
+		heap_sort(arr_date, 0, j - 1);
 		time_date = clock() - time_date;
 		printf("\tTime for %d elements structures: %f sec\n\n", j, ((float)time_date) / CLOCKS_PER_SEC);
 	}
@@ -94,19 +95,19 @@ void first_half_sorted_test(char *arr_char, int *arr_int, string *arr_str, Date 
 		quick_sort(arr_date, 0, (j / 2));
 
 		time_char = clock();
-		shell_sort_advanced(arr_char, 0, j - 1);
+		heap_sort(arr_char, 0, j - 1);
 		time_char = clock() - time_char;
 		printf("\tTime for %d elements chars: %f sec\n", j, ((float)time_char) / CLOCKS_PER_SEC);
 		time_int = clock();
-		shell_sort_advanced(arr_int, 0, j - 1);
+		heap_sort(arr_int, 0, j - 1);
 		time_int = clock() - time_int;
 		printf("\tTime for %d elements ints: %f sec\n", j, ((float)time_int) / CLOCKS_PER_SEC);
 		time_str = clock();
-		shell_sort_advanced(arr_str, 0, j - 1);
+		heap_sort(arr_str, 0, j - 1);
 		time_str = clock() - time_str;
 		printf("\tTime for %d elements strings: %f sec\n", j, ((float)time_str) / CLOCKS_PER_SEC);
 		time_date = clock();
-		shell_sort_advanced(arr_date, 0, j - 1);
+		heap_sort(arr_date, 0, j - 1);
 		time_date = clock() - time_date;
 		printf("\tTime for %d elements structures: %f sec\n\n", j, ((float)time_date) / CLOCKS_PER_SEC);
 	}
@@ -136,19 +137,19 @@ void reverse_sorted_test(char *arr_char, int *arr_int, string *arr_str, Date *ar
 		reverse_quick_sort(arr_str, 0, j - 1);
 		reverse_quick_sort(arr_date, 0, j - 1);
 		time_char = clock();
-		shell_sort_advanced(arr_char, 0, j - 1);
+		heap_sort(arr_char, 0, j - 1);
 		time_char = clock() - time_char;
 		printf("\tTime for %d elements chars: %f sec\n", j, ((float)time_char) / CLOCKS_PER_SEC);
 		time_int = clock();
-		shell_sort_advanced(arr_int, 0, j - 1);
+		heap_sort(arr_int, 0, j - 1);
 		time_int = clock() - time_int;
 		printf("\tTime for %d elements ints: %f sec\n", j, ((float)time_int) / CLOCKS_PER_SEC);
 		time_str = clock();
-		shell_sort_advanced(arr_str, 0, j - 1);
+		heap_sort(arr_str, 0, j - 1);
 		time_str = clock() - time_str;
 		printf("\tTime for %d elements strings: %f sec\n", j, ((float)time_str) / CLOCKS_PER_SEC);
 		time_date = clock();
-		shell_sort_advanced(arr_date, 0, j - 1);
+		heap_sort(arr_date, 0, j - 1);
 		time_date = clock() - time_date;
 		printf("\tTime for %d elements structures: %f sec\n\n", j, ((float)time_date) / CLOCKS_PER_SEC);
 	}

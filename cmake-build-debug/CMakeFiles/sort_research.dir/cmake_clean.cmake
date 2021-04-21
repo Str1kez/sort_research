@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/sort_research.dir/test.cpp.obj"
-  "libsort_research.dll.a"
-  "sort_research.exe"
-  "sort_research.exe.manifest"
+  "CMakeFiles/sort_research.dir/test.cpp.o"
+  "sort_research"
   "sort_research.pdb"
 )
 
