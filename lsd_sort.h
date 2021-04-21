@@ -12,7 +12,7 @@ using namespace std;
 template <typename T>
 void lsd_sort(T *arr, int i, int j, int mul=1)
 {
-	array<vector<int>, 10> a;
+	array<vector<T>, 10> a;
 	bool hdigit;
 	int iter;
 
@@ -31,6 +31,30 @@ void lsd_sort(T *arr, int i, int j, int mul=1)
 	}
 	if (hdigit)
 		lsd_sort(arr, i, j, mul * 10);
+}
+
+static unsigned int convert_from_date(Date &date)
+{
+	return date.Year * 10000 + date.Month * 100 + date.Day;
+}
+
+static void convert_to_date(Date &date, unsigned int &num)
+{
+	date.Year = num / 10000;
+	num %= 10000;
+	date.Month = num / 100;
+	num %= 100;
+	date.Day = num;
+}
+
+void lsd_sort_date(Date *arr, int i, int j)
+{
+	unsigned int *arr_converted = new unsigned int[j - i + 1];
+	for (int k = 0; k < j - i + 1; k++)
+		arr_converted[k] = convert_from_date(arr[k]);
+	lsd_sort(arr_converted, i, j);
+	for (int k = 0; k < j - i + 1; k++)
+		convert_to_date(arr[k], arr_converted[k]);
 }
 
 // TODO: Doesn't work

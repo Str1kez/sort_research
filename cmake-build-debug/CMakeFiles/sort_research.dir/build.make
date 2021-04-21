@@ -76,27 +76,27 @@ include CMakeFiles/sort_research.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/sort_research.dir/flags.make
 
-CMakeFiles/sort_research.dir/test.cpp.o: CMakeFiles/sort_research.dir/flags.make
-CMakeFiles/sort_research.dir/test.cpp.o: ../test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/strikez/ntfs/C++/sort_research/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sort_research.dir/test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sort_research.dir/test.cpp.o -c /media/strikez/ntfs/C++/sort_research/test.cpp
+CMakeFiles/sort_research.dir/main.cpp.o: CMakeFiles/sort_research.dir/flags.make
+CMakeFiles/sort_research.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/strikez/ntfs/C++/sort_research/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sort_research.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sort_research.dir/main.cpp.o -c /media/strikez/ntfs/C++/sort_research/main.cpp
 
-CMakeFiles/sort_research.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sort_research.dir/test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/strikez/ntfs/C++/sort_research/test.cpp > CMakeFiles/sort_research.dir/test.cpp.i
+CMakeFiles/sort_research.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sort_research.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/strikez/ntfs/C++/sort_research/main.cpp > CMakeFiles/sort_research.dir/main.cpp.i
 
-CMakeFiles/sort_research.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sort_research.dir/test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/strikez/ntfs/C++/sort_research/test.cpp -o CMakeFiles/sort_research.dir/test.cpp.s
+CMakeFiles/sort_research.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sort_research.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/strikez/ntfs/C++/sort_research/main.cpp -o CMakeFiles/sort_research.dir/main.cpp.s
 
 # Object files for target sort_research
 sort_research_OBJECTS = \
-"CMakeFiles/sort_research.dir/test.cpp.o"
+"CMakeFiles/sort_research.dir/main.cpp.o"
 
 # External object files for target sort_research
 sort_research_EXTERNAL_OBJECTS =
 
-sort_research: CMakeFiles/sort_research.dir/test.cpp.o
+sort_research: CMakeFiles/sort_research.dir/main.cpp.o
 sort_research: CMakeFiles/sort_research.dir/build.make
 sort_research: CMakeFiles/sort_research.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/strikez/ntfs/C++/sort_research/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable sort_research"

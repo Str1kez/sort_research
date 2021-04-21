@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/sort_research.dir/test.cpp.o -o sort_research 
+/usr/bin/c++ -g CMakeFiles/sort_research.dir/main.cpp.o -o sort_research 
